@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initialscale="1.0">
+        <title>Instaclone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+ *{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+}
+.container{
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px 45px;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: none;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vw;
+    border: 1px solid rgba(128,128,128,0,3);
+}
+
+.form-div form .instalogo{
+    width: 200px;
+    margin: 20px 0;
+
+
+}
+
+.input{
+    width: 90%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128,128,128,3);
+    margin: 3px;
+}
+
+.signup-btn{
+    width: 50%;
+    padding: 2%;
+    font-weight: 700;
+    background-color: rgba(1,183,255);
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0px;
+    color: white;
+}
+#or{
+    padding: 1%;
+}
+.login-link{
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+}
+.info{
+    padding: 1%;
+}
+.inputs{
+    padding: 1%;
+}
+    </style>
+    </head>
+    <body>
+        <main>
+            <div class="form-div">
+                <div class="container">
+                <form>
+                <img src="https://www.instaclone.app/img/instaclone-logo-dark.png" alt="logo" class="instalogo">
+                <p>Sign up to see photos and videos from your friends.</p>
+                <button class="signup-btn"><i class="fa-brands fa-facebook"></i>Log in with Facebook</button>
+                <p id ="or">  OR </p>
+                <div class="inputs">
+                <input type="email" class="input" placeholder="Email" required>
+                <input type="text" class="input" placeholder="Full Name" required>
+                <input type="text" class="input" placeholder="Username" required>
+                <input type="password" class="input" placeholder="Password" required>
+            </div>
+                <p class="info">People who use our service may have uploaded your contact <br>information to Instagram. <a href="#">Learn More</a> </p>
+                <p class="info">By signing up, you agree to our , <a href="#"> Terms<br> Privacy Policy and Cookies Policy</a> </p>
+                <button class="signup-btn">Sign Up </button></form>
+                <div class="Log in">
+                    <p class="login-link">Already Have an Account?<a href="./Insta_Login.html" class="login-link">Log in</a></p>
+                </div>
+            </div>
+        </div>
+        </main>
+    </body>
+</html>
+                
+                

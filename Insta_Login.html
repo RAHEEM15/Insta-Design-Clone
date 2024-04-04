@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initialscale="1.0">
+        <title>Instaclone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: none;
+}
+
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vw;
+    border: 1px solid white;
+}
+
+.form-div form .instalogo{
+    width: 200px;
+    margin: 20px 0;
+
+
+}
+
+.input{
+    width: 90%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    margin: 3px;
+}
+
+.login-btn{
+    width: 97%;
+    padding: 5%;
+    font-weight: 700;
+    background-color:lightskyblue;
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0px;
+    color: white;
+}
+
+</style>
+    </head>
+    <body>
+        <main>
+            <img src="https://media.gcflearnfree.org/content/633d944b3823fb02e84dce55_10_05_2022/Screen%20Shot%202022-10-10%20at%202.28.19%20PM.png"
+            alt="phn" class="phn img">
+            <div class="form-div">
+                <form>
+                <img src="https://www.instaclone.app/img/instaclone-logo-dark.png" alt="logo" class="instalogo">
+                <input type="text" class="input" placeholder="Phone number , Username or email" required>
+                <input type="password" class="input" placeholder="Password" required>
+                <button class="login-btn"><a href="instaclonehome.html">Log In</a> </button>
+                <p id="or"> or </p>
+                <a href="#" class="fb-login"><i class="fa-brands fa-facebook"></i>Log in with Facebook</a>
+             </form>
+             <div class="sign Up">
+                <p class="sign-link">Don't Have an Account?<a href="./Insta_signup.html" class="sign-link">Sign Up</a></p>
+             </div>
+            </div>
+        </main>
+    </body>
+</html>

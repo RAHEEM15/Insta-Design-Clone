@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style> 
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        /*header */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 18%;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header .search{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            border-radius: 3px;
+            background-color: lightgrey;
+        }
+        header .search input{
+            height: 25px;
+            background-color: lightgrey;
+            border: none;
+            outline: none;
+           
+        }
+        header nav ul{
+            list-style-type: none;
+            display: flex;
+            padding: 5px;
+        }
+        header nav ul li{
+            margin-right: 20px;
+        }
+        header nav ul li:last-child{
+            margin-right: 0;
+        }
+        header nav ul li a img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        header nav ul li a img:hover{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        header nav ul li a i{
+            font-size: 25px;
+            color: black;
+        }
+        header nav ul li a i:hover{
+            font-size: 30px;
+            color:black;
+        }
+
+        /* stories */
+
+        section{
+            padding: 30px 50px;
+            display: flex;
+        }
+        .left{
+            width: 100%;
+        }
+        .story{
+            display: flex;
+            padding: 16px;
+            justify-content: space-between;
+        }
+        .story .stories{
+            width: 17%;
+        }
+        .story .stories a img{
+            border-radius: 50px;
+            border: 2px solid purple;
+            object-fit: cover;
+        }
+        .name{
+            padding-left: 12px;
+        }
+        .story .stories2{
+            width: 17%;
+        }
+        .story .stories2 a img{
+            border-radius: 50px;
+            border: 2px solid purple;
+            object-fit: cover;
+        }
+
+
+        /* Posts */
+        
+        .post{
+            margin: 20px;
+            border: 1px solid lightgrey;
+            padding: 25px;
+            border-radius: 3px;
+        }
+        .post .title{
+            display: flex;
+        }
+        .post .title .image img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 20px;;
+        }
+        .details .user{
+            margin-left: 20px;
+            font-size: 25px;
+            margin-top: 5px;
+        }
+        .details .user a{
+            text-decoration: none;
+            color: black;
+        }
+        .content img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .post .footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .post .footer i{
+            font-size: 25px;
+            margin-right: 12px;
+            color: black;
+            padding: 10px;
+        }
+        .post .post-footer-content{
+            padding: 0px 16px 16px 16px;
+        }
+        .post .post-footer-content p{
+            padding: 4px;
+        }
+        .post .add-comment{
+            padding: 16px;
+        }
+        .post .add-comment input{
+            outline: none;
+            border: none;
+        }
+        
+        .post .add-comment a{
+            text-decoration: none;
+            color: black;
+            margin-left: 7px;
+        }
+
+
+    /*media query */
+
+    @media (max-width:992px){
+        header{
+            padding: 10px 20px;
+        }
+        section .left{
+            width: 100%;
+        }
+    }
+
+    @media  (max-width:768px){
+        header .search{
+            display: none;
+        }
+        section{
+            padding: 30px 20px;
+        }
+    }
+
+    @media  (max-width:560px){
+       .story .stories{ 
+        width: 65%;
+       }
+       .story .stories2{ 
+        width: 65%;
+       }
+       header nav ul li{
+        margin-right: 10px;
+       }
+    }
+
+    @media  (max-width:1100px){
+        .story .stories a img{
+            width: 50px;
+            height: 50px;
+        }
+        .story .stories2 a img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media  (max-width:630px){
+
+        .story .stories a img{
+            width: 100px;
+            height: 100px;
+        
+        }
+
+        .story .stories2 a img{
+            display:none;
+        }
+        .story .stories2 .name{
+            display: none;
+        }
+        
+    }
+    @media  (max-width:420px){
+        header nav ul li{
+            margin-right: 10px;
+        }
+        header .logo img{
+            width:150px;
+            height: 50px;
+            margin-right: 40px;
+        }
+        header nav ul li a{
+            font-size: 15px;
+            margin-right: 2px;
+
+        }
+        .story .stories{ 
+        width: 85%;
+        padding: 0px 4px;
+       }
+       .story .stories a img{
+            width: 70px;
+            height: 70px;
+        }
+        .name{
+            padding: 6px;
+            font-size: 15px;
+        }
+        .story .stories2{
+            display: none;
+        }
+        .post{
+            margin: 1px;
+            width: 100%;
+        }
+        .content img{
+            width: 100%;
+            height: 5%;
+        }
+}
+
+
+        
+        </style>
+        </head>
+        <body>
+            <div class="insta">
+                <header>
+                    <div class="logo">
+                        <img src="https://www.instaclone.app/img/instaclone-logo-dark.png" alt="logo" width="100px" height="30px" class="instalogo">
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search">
+                    </div>
+                    <nav>
+                    <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i></li></a>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></li></a>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></li></a>
+                    <li><a href="#"><i class="fa-regular fa-square-plus"></i></li></a>
+                   <li><a href="instacloneprofile.html"><img src="https://static.toiimg.com/thumb/msid-88391885,width-1280,resizemode-4/88391885.jpg"></a></li>
+                    </ul>
+                    </nav>
+                </header>
+                <section>
+                    <div class="left">
+                        <div class="story">
+                            <div class="stories">
+                                <a href="#"><img src="https://e0.pxfuel.com/wallpapers/501/957/desktop-wallpaper-r15-r15-v4.jpg" width="70" height="70" alt="story"></a>
+                                <p class="name">Maara</p>
+                            </div>
+                             <div class="stories">
+                                <a href="#"><img src="https://media.istockphoto.com/id/871365994/photo/holding-a-dslr-camera.jpg?s=612x612&w=0&k=20&c=FNMdxl2euglTJnjfDm0o8ZEQ8Jy0qKC4WWq8zHv4usc="
+                                     width="70" height="70" alt="story"></a>
+                                <p class="name">Rahim</p>
+                            </div>
+                            <div class="stories">
+                                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg"
+                                     width="70" height="70" alt="story"></a>
+                                <p class="name">Thiru</p>
+                            </div>
+                            <div class="stories">
+                                <a href="#"><img src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                                     width="70" height="70" alt="story"></a>
+                                <p class="name">Jai</p>
+                            </div>
+                            <div class="stories">
+                                <a href="#"><img src="https://i.pinimg.com/736x/58/a5/c3/58a5c35a64ec4d60e7e2d7544ee5a843.jpg"
+                                     width="70" height="70" alt="story"></a>
+                                <p class="name">Surya</p>
+                            </div>
+                            <div class="stories2">
+                                <a href="#"><img src="https://e1.pxfuel.com/desktop-wallpaper/903/679/desktop-wallpaper-97-aesthetic-best-profile-pic-for-instagram-for-boy-instagram-dp-boys.jpg"
+                                     width="70" height="70" alt="story"></a>
+                                <p class="name">Vignesh</p>
+                            </div>
+                            <div class="stories2">
+                                <a href="#"><img src="https://funkylife.in/wp-content/uploads/2022/09/boys-dp-from-funkylife-88.jpg" width="70" height="70" alt="story"></a>
+                                <p class="name">Aakash</p>
+                            </div>
+                            <div class="stories2">
+                                <a href="#"><img src="https://i.pinimg.com/236x/3c/0a/9a/3c0a9ad0976300c7f8262c14b0d4d4a9.jpg" width="70" height="70" alt="story"></a>
+                                <p class="name">Swetha</p>
+                            </div>
+                            <div class="stories2">
+                                <a href="#"><img src="https://i.pinimg.com/originals/25/4b/04/254b0457df2facf12b95d749117aaabc.jpg" width="70" height="70" alt="story"></a>
+                                <p class="name">Kaviya</p>
+                            </div>
+                        </div>
+                            <div class="post">
+                                <div class="title">
+                                    <div class="image">
+                                    <img src="https://th-i.thgim.com/public/entertainment/movies/h3h3er/article67027108.ece/alternates/FREE_1200/Captain%20Miller%20first%20look.jpg" 
+                                     width="100" height="100" alt="img" >
+                                    </div>
+                                    <div class="details">
+                                        <p class="user"><a href="#"> Dhanush</a></p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="https://th-i.thgim.com/public/entertainment/movies/h3h3er/article67027108.ece/alternates/FREE_1200/Captain%20Miller%20first%20look.jpg" 
+                                    width="600" height="600" alt="img" >
+                                </div>
+                                <div class="footer">
+                                    <div class="footericon">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#"><i class="fa-regular fa-comment"></i></a>
+                                            <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                                    </div>
+                                    <div class="save">
+                                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="post-footer-content">
+                                    <p class="likes">2M Likes</p>
+                                    <p class="caption"><b>Dhanush</b> <span>      Captain Miller</span></p>
+                                    <p class="comments">View all Comments...</p>
+                                </div>
+                                <div class="add-comment">
+                                    <i class="fa-regular fa-smile-beam"></i>
+                                    <input type="text" placeholder="Add a Comment...">
+                                    <a href="#">Post</a>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="post">
+                                <div class="title">
+                                    <div class="image">
+                                    <img src="https://images.indianexpress.com/2023/04/Vijay-R.jpg" 
+                                     width="80" height="80" alt="img" >
+                                    </div>
+                                    <div class="details">
+                                        <p class="user"><a href="#">Vijay</a></p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="https://static.moviecrow.com/gallery/20230917/221018-Leo%20Vijay%20Telugu%20Poster.jpg" 
+                                    width="600" height="600" alt="img" >
+                                </div>
+                                <div class="footer">
+                                    <div class="footericon">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#"><i class="fa-regular fa-comment"></i></a>
+                                            <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                                    </div>
+                                    <div class="save">
+                                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="post-footer-content">
+                                    <p class="likes">2M Likes</p>
+                                    <p class="caption"><b>Vijay</b> <span>Leo</span></p>
+                                    <p class="comments">View all Comments...</p>
+                                </div>
+                                <div class="add-comment">
+                                    <i class="fa-regular fa-smile-beam"></i>
+                                    <input type="text" placeholder="Add a Comment...">
+                                    <a href="#">Post</a>
+                                </div>
+                            </div>  
+                            <br><br>
+                            <div class="post">
+                                <div class="title">
+                                    <div class="image">
+                                    <img src="https://pbs.twimg.com/profile_images/1239186928710246401/FVq-2eWk_400x400.jpg" 
+                                     width="100" height="100" alt="img" >
+                                    </div>
+                                    <div class="details">
+                                        <p class="user"><a href="#"> Nelson</a></p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZctQUSSoPk22KZMLauCx9AyXi28yfwjfTeRcNfenXyThQVZTYxhP9vtedQFvVSF-Bc4&usqp=CAU" 
+                                    width="600" height="600" alt="img" >
+                                </div>
+                                <div class="footer">
+                                    <div class="footericon">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#"><i class="fa-regular fa-comment"></i></a>
+                                            <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                                    </div>
+                                    <div class="save">
+                                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="post-footer-content">
+                                    <p class="likes">2M Likes</p>
+                                    <p class="caption"><b>Nelson</b> <span>Jailer </span></p>
+                                    <p class="comments">View all Comments...</p>
+                                </div>
+                                <div class="add-comment">
+                                    <i class="fa-regular fa-smile-beam"></i>
+                                    <input type="text" placeholder="Add a Comment...">
+                                    <a href="#">Post</a>
+                                </div>
+                            </div>
+                                  
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </body>    
